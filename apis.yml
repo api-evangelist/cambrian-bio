@@ -1,17 +1,33 @@
 aid: cambrian-bio
 name: Cambrian Bio
-description: 'Cambrian Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Cambrian Bio (Cambrian BioPharma, Inc.) is a New York-headquartered clinical-stage
+  drug development company working on the biology of aging. It runs a distributed "PipeCo"
+  model — sourcing promising academic and early-stage science, then capitalizing and staffing
+  each program as a separate subsidiary company under a shared development engine — to advance
+  therapeutics that target the metabolic pathways that decline with age, first as treatments
+  for chronic metabolic disease and ultimately as preventive medicines that extend healthspan.
+  Its lead program, ATX-304, is an AMPK network activator with reported positive human
+  translational data. Cambrian Bio is a therapeutics developer, not a software vendor: it
+  publishes a corporate website, a science and pipeline overview, news and publications, and
+  a blog, but no public API, developer portal, SDK, or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/cambrian-bio/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/600be113c4111047016de64a/600be12d2137ed834d86305c_webclip.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Drug Development
+- Longevity
+- Healthcare
+- Life Sciences
+- Clinical Stage
+- Aging
+- Metabolic Disease
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cambrian-bio-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/cambrian-bio-stock
+  url: https://www.cambrianbio.com/
+- type: About
+  url: https://www.cambrianbio.com/about
+- type: Blog
+  url: https://www.cambrianbio.com/blogs
+- type: News
+  url: https://www.cambrianbio.com/news-and-publications
+- type: Support
+  url: https://www.cambrianbio.com/contact
+- type: PrivacyPolicy
+  url: https://www.cambrianbio.com/privacy-policy
+- type: Careers
+  url: https://www.cambrianbio.com/careers-page
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cambrianbio/
+- type: Twitter
+  url: https://twitter.com/cambrianbio
+- type: LLMsTxt
+  url: llms/cambrian-bio-llms.txt
+x-enrichment:
+  date: '2026-08-09'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Cambrian Bio is a clinical-stage drug developer whose product is therapeutics, not
+    software; its Webflow corporate site has no developer, API, or docs section and every
+    spec and .well-known probe against www.cambrianbio.com returned the site 404 page.
+  evidence:
+  - url: https://www.cambrianbio.com/openapi.json
+    status: 404
+  - url: https://www.cambrianbio.com/developers
+    status: 404
+  - url: https://www.cambrianbio.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.cambrianbio.com/llms.txt
+    status: 404
+  - url: https://www.cambrianbio.com/
+    status: 200
+  checked: '2026-08-09'
