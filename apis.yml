@@ -11,6 +11,17 @@ description: 'Cambrian Bio (Cambrian BioPharma, Inc.) is a New York-headquartere
   publishes a corporate website, a science and pipeline overview, news and publications, and
   a blog, but no public API, developer portal, SDK, or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/cambrian-bio/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/600be113c4111047016de64a/600be12d2137ed834d86305c_webclip.png
 x-type: company
 x-source: harvest:secondary-market
